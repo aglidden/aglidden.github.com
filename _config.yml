@@ -1,7 +1,7 @@
 # Jekyll configuration
 
-name: Blog Name
-description: Software Developer
+name: Test Blog
+description: This is a test blog to learn jekyll.
 
 # Url is currently only used only for the RSS feed in feed.xml
 url: http://aglidden.github.io
@@ -9,6 +9,7 @@ url: http://aglidden.github.io
 
 # For a project page here should be a project name. Otherwise (for user's/organizaion's page leave it empty)
 # baseurl: '/jekyll-clean-dark'
+baseurl: ''
 
 share:
   facebook: true
