@@ -22,7 +22,7 @@ share:
 social:
   github: aglidden
   stackoverflow: ''
-  linkedin:
+  linkedin: false
   instagram: ''
   lastfm: ''
   rss: feed.xml
