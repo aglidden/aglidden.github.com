@@ -21,10 +21,10 @@ share:
 
 social:
   github: aglidden
-  stackoverflow: 
-  linkedin: 
-  instagram: 
-  lastfm: 
+  stackoverflow: false
+  linkedin: false
+  instagram: false
+  lastfm: false
   rss: feed.xml
 
 # Google Analytics key, leave blank to ignore
