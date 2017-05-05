@@ -422,7 +422,9 @@ nav.shrink .navbar-toggle {
           //line-height: $pages-item-size;
           background-color: $background-color;
           color: $accent-color;
-
+          -webkit-border-radius: 6px;
+          -moz-border-radius: 6px;
+          border-radius: 6px;
         }
         a {
             color: $accent-color;
