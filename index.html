@@ -1,5 +1,10 @@
 ---
 layout: page
+paginate:
+    root: /
+    limit: false
+    page_amount: 7
+    title_label: Pagination
 ---
 
 {% for post in paginator.posts %}
