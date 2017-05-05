@@ -405,7 +405,6 @@ nav.shrink .navbar-toggle {
       //margin: $pages-item-margin;
       padding: 0;
       list-style: none;
-      color: $accent-color;
       background-color: $background-color;
        -webkit-border-radius: 6px;
        -moz-border-radius: 6px;
@@ -415,7 +414,6 @@ nav.shrink .navbar-toggle {
        box-shadow: rgba(0,0,0,0.8) 0 0 10px;
       &.page {
         .pagination-item {
-          text-decoration: none; // No underlines on circle links
           //width: $pages-item-size;
           //height: $pages-item-size;
           //border-radius: $pages-item-size;
@@ -426,9 +424,6 @@ nav.shrink .navbar-toggle {
           -moz-border-radius: 6px;
           border-radius: 6px;
         }
-        a {
-            color: $accent-color;
-        }
 
         //a:hover {
          // background: $pages-item-hover;
@@ -437,7 +432,6 @@ nav.shrink .navbar-toggle {
         &.current-page {
           .pagination-item {
             background-color: $post-panel-color;
-            color: $accent-color;
           }
         }
       }
