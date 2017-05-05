@@ -30,11 +30,37 @@ $pages-item-active-shadow:  inset 0 0 5px rgba(0, 0, 0, .3) !default;
 $pages-item-active-color:   white !default;
 
 // Mixins
-@import "./utils/clearfix";
-@import "utils/breakpoint";
+@mixin pages-clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin pages-breakpoint($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
 
 // Classes
-@import "utils/sr-only";
+@if $pages-sr-only == true {
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+}
 
 // Behavioural
 .pagination {
@@ -190,4 +216,43 @@ $pages-item-active-color:   white !default;
   }
 }
 
-@import "cosmetics/cosmetics";
+// Cosmetic
+@if $pages-cosmetics == true {
+  .pagination {
+    padding: 0;
+    margin: $pages-margin;
+    text-align: center;
+
+    li {
+      margin: $pages-item-margin;
+      padding: 0;
+      list-style: none;
+
+      &.page {
+        .pagination-item {
+          text-decoration: none; // No underlines on circle links
+          width: $pages-item-size;
+          height: $pages-item-size;
+          border-radius: $pages-item-size;
+          line-height: $pages-item-size;
+          background: $pages-item-background;
+          color: $pages-item-color;
+          box-shadow: $pages-item-shadow;
+
+        }
+
+        a:hover {
+          background: $pages-item-hover;
+        }
+
+        &.current-page {
+          .pagination-item {
+            background: $pages-item-active;
+            box-shadow: $pages-item-active-shadow;
+            color: $pages-item-active-color;
+          }
+        }
+      }
+    }
+  }
+}
