@@ -3,6 +3,8 @@
 name: Test Blog
 description: This is a test blog to learn jekyll.
 
+
+
 # Url is currently only used only for the RSS feed in feed.xml
 url: http://aglidden.github.io
 #url: http://localhost:4000
@@ -43,6 +45,10 @@ permalink: /:year/:month/:title
 
 # Enable for using pages, more details are here: http://jekyllrb.com/docs/pagination/
 paginate: 5
+gems: [jekyll-paginate]
+
+
+
 
 highlighter: rouge
 
