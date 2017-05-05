@@ -407,6 +407,12 @@ nav.shrink .navbar-toggle {
       list-style: none;
       color: $accent-color;
       background-color: $background-color;
+       -webkit-border-radius: 6px;
+       -moz-border-radius: 6px;
+       border-radius: 6px;
+       -webkit-box-shadow: rgba(0,0,0,0.8) 0px 0 10px;
+       -moz-box-shadow: rgba(0,0,0,0.8) 0 0 10px;
+       box-shadow: rgba(0,0,0,0.8) 0 0 10px;
       &.page {
         .pagination-item {
           text-decoration: none; // No underlines on circle links
@@ -416,9 +422,6 @@ nav.shrink .navbar-toggle {
           //line-height: $pages-item-size;
           background-color: $background-color;
           color: $accent-color;
-          -webkit-box-shadow: rgba(0,0,0,0.8) 0px 0 10px;
-          -moz-box-shadow: rgba(0,0,0,0.8) 0 0 10px;
-          box-shadow: rgba(0,0,0,0.8) 0 0 10px;
 
         }
         a {
@@ -432,9 +435,6 @@ nav.shrink .navbar-toggle {
         &.current-page {
           .pagination-item {
             background-color: $post-panel-color;
-            -webkit-box-shadow: rgba(0,0,0,0.8) 0px 0 10px;
-            -moz-box-shadow: rgba(0,0,0,0.8) 0 0 10px;
-            box-shadow: rgba(0,0,0,0.8) 0 0 10px;
             color: $accent-color;
           }
         }
