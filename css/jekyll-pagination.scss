@@ -30,7 +30,7 @@ $pages-item-active-shadow:  inset 0 0 5px rgba(0, 0, 0, .3) !default;
 $pages-item-active-color:   white !default;
 
 // Mixins
-@import "utils/clearfix";
+@import "./utils/clearfix";
 @import "utils/breakpoint";
 
 // Classes
