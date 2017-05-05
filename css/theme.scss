@@ -400,6 +400,7 @@ nav.shrink .navbar-toggle {
   .pagination {
     padding: 0;
     //margin: $pages-margin;
+    color: $accent-color;
     text-align: center;
     li {
       //margin: $pages-item-margin;
@@ -419,7 +420,6 @@ nav.shrink .navbar-toggle {
           //border-radius: $pages-item-size;
           //line-height: $pages-item-size;
           background-color: $background-color;
-          color: $accent-color;
           -webkit-border-radius: 6px;
           -moz-border-radius: 6px;
           border-radius: 6px;
