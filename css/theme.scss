@@ -38,8 +38,8 @@ $warning-color: #ffff00;
 body {
   padding-top: 80px;
   color: $font-color;
-  background: $background-color url(./pics/triangles.png);
-  //background: $background-color url(./pics/squares.png); // Another good pattern for background
+  //background: $background-color url(./pics/triangles.png);
+  background: $background-color url(./pics/squares.png); // Another good pattern for background
 }
 .well {
   background-color: $post-panel-color;
@@ -387,3 +387,47 @@ nav.shrink .navbar-toggle {
     line-height: 1.8;
   }
 }
+
+//*********************************************************
+// Pagination css
+//*********************************************************
+  .pagination {
+    padding: 0;
+    //margin: $pages-margin;
+    text-align: center;
+    line-height: 200px;
+    li {
+      //margin: $pages-item-margin;
+      padding: 0;
+      list-style: none;
+
+      &.page {
+        .pagination-item {
+          text-decoration: none; // No underlines on circle links
+          //width: $pages-item-size;
+          //height: $pages-item-size;
+          //border-radius: $pages-item-size;
+          //line-height: $pages-item-size;
+          background: $background-color;
+          //color: $pages-item-color;
+          box-shadow: 0 0 0 0, 0px 8px 16px rgba(0, 0, 0, 0.2);
+
+        }
+        a {
+            color: $accent-color;
+        }
+
+        //a:hover {
+         // background: $pages-item-hover;
+       // }
+
+        &.current-page {
+          .pagination-item {
+            background: $background-color;
+            box-shadow: 0 0 0 0, 0px 8px 16px rgba(0, 0, 0, 0.2);
+            //color: $pages-item-active-color;
+          }
+        }
+      }
+    }
+  }

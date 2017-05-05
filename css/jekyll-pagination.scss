@@ -12,14 +12,14 @@ $pages-breakpoint8:         768px !default;
 $pages-breakpoint9:         768px !default;
 
 // Cosmetics variables
-$pages-cosmetics:           true !default;
-//$pages-cosmetics:           false !default;
+//$pages-cosmetics:           true !default;
+$pages-cosmetics:           false !default;
 $pages-sr-only:             true !default;
 
 // Styling
 $pages-margin:              1em 0 !default;
 $pages-item-margin:         0 .2em !default;
-$pages-item-size:           36px !default;
+$pages-item-size:           3px !default;
 $pages-item-background:     #292929 !default;
 $pages-item-color:          #dddddd !default;
 $pages-item-link-color:     #f74545 !default;
@@ -27,7 +27,7 @@ $pages-item-shadow:         inset 0 0 5px rgba(0, 0, 0, .05) !default;
 $pages-item-hover:          #dddddd !default;
 $pages-item-active:         #1879CE !default;
 $pages-item-active-shadow:  inset 0 0 5px rgba(0, 0, 0, .3) !default;
-$pages-item-active-color:   white !default;
+$pages-item-active-color:   black !default;
 
 // Mixins
 @mixin pages-clearfix {
@@ -216,43 +216,3 @@ $pages-item-active-color:   white !default;
   }
 }
 
-// Cosmetic
-@if $pages-cosmetics == true {
-  .pagination {
-    padding: 0;
-    margin: $pages-margin;
-    text-align: center;
-
-    li {
-      margin: $pages-item-margin;
-      padding: 0;
-      list-style: none;
-
-      &.page {
-        .pagination-item {
-          text-decoration: none; // No underlines on circle links
-          width: $pages-item-size;
-          height: $pages-item-size;
-          border-radius: $pages-item-size;
-          line-height: $pages-item-size;
-          background: $pages-item-background;
-          color: $pages-item-color;
-          box-shadow: $pages-item-shadow;
-
-        }
-
-        a:hover {
-          background: $pages-item-hover;
-        }
-
-        &.current-page {
-          .pagination-item {
-            background: $pages-item-active;
-            box-shadow: $pages-item-active-shadow;
-            color: $pages-item-active-color;
-          }
-        }
-      }
-    }
-  }
-}
