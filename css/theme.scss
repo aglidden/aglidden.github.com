@@ -400,7 +400,8 @@ nav.shrink .navbar-toggle {
       //margin: $pages-item-margin;
       padding: 0;
       list-style: none;
-
+      color: $accent-color;
+      background: $background-color;
       &.page {
         .pagination-item {
           text-decoration: none; // No underlines on circle links
@@ -409,7 +410,7 @@ nav.shrink .navbar-toggle {
           //border-radius: $pages-item-size;
           //line-height: $pages-item-size;
           background: $background-color;
-          //color: $pages-item-color;
+          color: $accent-color;
           box-shadow: 0 0 0 0, 0px 8px 16px rgba(0, 0, 0, 0.2);
 
         }
@@ -423,9 +424,9 @@ nav.shrink .navbar-toggle {
 
         &.current-page {
           .pagination-item {
-            background: $background-color;
+            background: $post-panel-color;
             box-shadow: 0 0 0 0, 0px 8px 16px rgba(0, 0, 0, 0.2);
-            //color: $pages-item-active-color;
+            color: $accent-color;
           }
         }
       }
