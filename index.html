@@ -21,12 +21,13 @@ layout: page
     {% endfor %}
   </ul>
 </div>
-
+  {% if post.description %}
   <div class="post-descr">
     <p>
       {{ post.description }}
     </p>
   </div>
+  {% endif %}
 </div>
 {% endfor %}
 
